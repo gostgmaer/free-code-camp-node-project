@@ -4,7 +4,7 @@
   "description": "An FCC Backend Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index",
     "dev": "nodemon index.js"
   },
   "dependencies": {
