@@ -15,7 +15,7 @@ const currentIpFinder = async (req, res) => {
       .status(200)
       .json({ ipaddress : req.ip, language : req.headers["accept-language"],software:req.headers["user-agent"] });
   } catch (error) {
-    res.status(500).json({ error: "Invalid Date" });
+    res.status(500).json({ error: "Invalid" });
   }
 };
 
