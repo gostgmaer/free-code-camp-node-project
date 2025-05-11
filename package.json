@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freeCodeCamp/boilerplate-project-timestamp.git"
+    "url": "https://github.com/gostgmaer/free-code-camp-node-project.git"
   },
   "bugs": {
-    "url": "https://github.com/freeCodeCamp/freeCodeCamp/issues"
+    "url": "https://github.com/gostgmaer/free-code-camp-node-project/issues"
   },
-  "homepage": "https://github.com/freeCodeCamp/boilerplate-project-timestamp#readme",
-  "author": "freeCodeCamp <team@freecodecamp.org>",
+  "homepage": "https://github.com/gostgmaer/free-code-camp-node-project",
+  "author": "kishor sarkar",
   "keywords": [
     "node",
     "express",
