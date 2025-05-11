@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var cors = require('cors');
-const timeStampRoute = require('./routes/timeStamp');
+const projectRoute = require('./routes/projectRoute');
 app.use(cors({optionsSuccessStatus: 200}));  // some legacy browsers choke on 204
 
 // http://expressjs.com/en/starter/static-files.html
@@ -22,7 +22,7 @@ app.get("/api", function (req, res) {
 
 app.use(cors());
 app.use(express.json());
-app.use("/api", timeStampRoute);
+app.use("/api", projectRoute);
 
 
 // Listen on port set in environment variable or default to 3000
