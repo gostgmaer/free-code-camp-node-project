@@ -2,8 +2,10 @@
 // init project
 var express = require('express');
 var app = express();
+require("dotenv").config();
 var cors = require('cors');
 const projectRoute = require('./routes/projectRoute');
+const connectDB = require('./db/connect');
 app.use(cors({optionsSuccessStatus: 200}));  // some legacy browsers choke on 204
 
 // http://expressjs.com/en/starter/static-files.html
@@ -31,17 +33,15 @@ app.use("/api", projectRoute);
 // });
 
 const start = async (res) => {
+  // console.log(process.env.DB);
+  
   try {
-    // connectDB(dbUrl);
+    connectDB(process.env.DB);
     app.listen(process.env.PORT || 3000, () => {
       console.log(`Server is running on port ${process.env.PORT || 3000}`);
     });
   } catch (error) {
-    res.status(500).json({
-      statusCode: 500,
-      status: "Internal Server Error",
-      message: error.message,
-    });
+    console.log(error.message);
   }
 };
 start();
