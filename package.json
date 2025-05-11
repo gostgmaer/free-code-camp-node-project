@@ -4,9 +4,9 @@
   "description": "An FCC Backend Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index.js",
-    "build": "node index"
+   "dev": "node index.js",
+  "start": "node index.js",
+  "build": "echo 'No build step required'"
   },
   "dependencies": {
     "cors": "^2.8.0",
