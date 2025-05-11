@@ -15,6 +15,8 @@ projectRoute.route("/users").post(register);
 projectRoute.route("/users").get(getusers);
 projectRoute.route("/users/:_id/exercises").post(createExcercise);
 projectRoute.route("/users/:_id/logs").get(getExcercise);
+projectRoute.route("/fileanalyse").get(getExcercise);
+
 
 
 
